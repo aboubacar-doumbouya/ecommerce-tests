@@ -5,6 +5,9 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
+  schedule:
+    # Exécute tous les jours à 12h00 Paris (10h00 UTC)
+    - cron: '0 10 * * *'
 
 jobs:
   test:
